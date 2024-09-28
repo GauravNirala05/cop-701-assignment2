@@ -1,0 +1,1944 @@
+fileFormatVersion: 2
+guid: 7050e5321ab90d94cb69faf34b67465e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_0"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1169
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280396661fdd3da4caf5ac2119e0645f
+      internalID: -1120691338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_1"
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 913
+        width: 221
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0913af573e6e7a445a342e96c7573052
+      internalID: 1677767926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_2"
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1169
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661026b7dd642f04fa4a53859b93b8b9
+      internalID: -1686101343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_3"
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1192
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a608a164221129a47a6738de9740852a
+      internalID: -268311486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_4"
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1114
+        width: 51
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3302db53d3051eb4c801526b505aa277
+      internalID: 357336275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_5"
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1195
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1488d0222afe59140b925048dd78bab5
+      internalID: -1671630294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_6"
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1182
+        width: 31
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5cc014da3078f4aad6f309925cec75
+      internalID: -415452018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_7"
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1155
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c369caf5e92c21d449d189063e460ca4
+      internalID: -1643086075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_8"
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1179
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26d8a14c3f5df84d8d17ac5fb6e0ea1
+      internalID: 1775085340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_9"
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1154
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30a6ecdb7dec64a95b90090a395a46
+      internalID: -704626139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_10"
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1172
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697072a685cb7d44f8bcc878dbbfcfbf
+      internalID: -454055248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_11"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 916
+        width: 218
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad15b077e6695fb449052142a29736c5
+      internalID: -1677588782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_12"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1129
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbdb7928f534024387b15b2a130dba4
+      internalID: 1668404079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_13"
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1146
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c523440acca54b8bffed7f2632649
+      internalID: 1332143441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_14"
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 341
+        width: 293
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6060e9034282f054c917edb6077b4337
+      internalID: -1989050218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_15"
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 843
+        width: 323
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad56dbd675328d64598a92341e9c2bd7
+      internalID: 462181733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_16"
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1141
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d4b9fc98f880045b3b2b6df3039dda
+      internalID: 1212546232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_17"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1099
+        width: 40
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8beb600f5644f43b02a594eb226846
+      internalID: -1733718680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_18"
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1114
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79076d8639069e5408cda84210d386b4
+      internalID: -370542343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_19"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1075
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4ee9586fe0c8c41a3c853c012d33a8
+      internalID: 431941815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_20"
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1068
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00093df79856e44bb8333a43aace732
+      internalID: -1445079974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_21"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 74
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3149050c0bf8341bb47cfabf3d1d63
+      internalID: 1636750912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_22"
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 860
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1cbbc5f88100b4abee83cdfa5d882c
+      internalID: 919087981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_23"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 874
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d335dedd35dfe1498dcbcaee8246e5d
+      internalID: -1566242738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_24"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 563
+        width: 215
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d23573aef90146895e7f9511a5135
+      internalID: -1450050142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_25"
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 620
+        width: 250
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6423b7499139a4281e1537e38a746e
+      internalID: 1807431882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_26"
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 872
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305488b2b3673c645a6939747e99bd7e
+      internalID: 812854994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_27"
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 751
+        width: 83
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dc32b162367764d849a19be1b032f5
+      internalID: 52197104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_28"
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 589
+        width: 241
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24946e829962db40adedc47140b2a49
+      internalID: -1621522939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_29"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 855
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834498309c6ee02498eba7c50efad961
+      internalID: 1487060772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_30"
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 802
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31596eb8cc0cf4342bf65cd49e631c0c
+      internalID: -594224768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_31"
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 820
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676ef706aa84dc3469cdf81750beaa60
+      internalID: -251538257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_32"
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 830
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713f0b16318118648946a8a02c236720
+      internalID: -522833406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_33"
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 778
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e154887a7ee12408521a613d257ad2
+      internalID: -344058073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_34"
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 795
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e666865ca1dc84e9840a3963b349ec
+      internalID: -221310900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_35"
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 789
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a42c21e77ffc14fbd647620a2a1c76
+      internalID: -1417186726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_36"
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 786
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceb963724765924e9f854a97b754d85
+      internalID: -1956787254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_37"
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 617
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ee230551f090742884c248f125f884
+      internalID: 1236713028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_38"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 640
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0570711c593963a4d898f53cfce04078
+      internalID: 572294547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_39"
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 614
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e60dc2e53385d4479a3a208f6ebb686
+      internalID: -826261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_40"
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 642
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe76ee163a161341a5119e580c2f447
+      internalID: 1757455961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_41"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf170bd85f096a418fba2de25225447
+      internalID: 1501070438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_42"
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 292
+        width: 323
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f5c4603c7404f4b9faae66dfca71fc
+      internalID: -348828765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_43"
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 589
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec16e7db80b7d6b49a6a87d34dc8f116
+      internalID: 1117627863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_44"
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 602
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e0b8e77a42f0b4bb10c1b348f6602c
+      internalID: 2131032847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_45"
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 304
+        width: 245
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f676decec18af624593af7464cf4ea7c
+      internalID: -896886230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_46"
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 583
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d65aa6baf53ae40b689d06554c3d6d
+      internalID: 1421812069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_47"
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 598
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc13579b9c6a2c4db0b5010533a5229
+      internalID: 368737002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_48"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 299
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a19a7456df32b147b8bbe10010c9ae0
+      internalID: 1843182771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_49"
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 547
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f442da19c7ea847bd2977f3341b74f
+      internalID: 1296393619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_50"
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 575
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110defe70ca39bd48b6ebd74ff40832e
+      internalID: 588712114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_51"
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 534
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2ee2254f00c4f459edbbeef0fa8f12
+      internalID: -1172163885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_52"
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 465
+        width: 50
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e836c60416c6a743b922ffea27389e5
+      internalID: -1369007431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_53"
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 395
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d113c57d47aeb34da34a5e6cc357516
+      internalID: -1604902783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_54"
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 353
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caddd133963e2674bb7cdaed7d93cf64
+      internalID: -1185412555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_55"
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 366
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614ef5f7ededbbe4583587c6a06c5142
+      internalID: 935060235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_56"
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 64
+        width: 231
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de00b83423424a34b8fc91feffd9d3e7
+      internalID: 2081782555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_57"
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 215
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5baa93a8ea82354ba2d6486bc7822c6
+      internalID: 35186574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_58"
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 302
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8cc005ef96b0a4f8862d6ee2c326a7
+      internalID: 148758079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_59"
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 49
+        width: 323
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8c86457ecaf064d9f8e5b941676e09
+      internalID: -912096169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_60"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 52
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfbfd4902f9be141ad140b2c96e6444
+      internalID: 601054183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_61"
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 238
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cb902385bb70e489ee9d630c340f22
+      internalID: 1972557128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_62"
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 251
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0308e7ceff166429894dfbcc3d6fa4
+      internalID: 2094014613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_63"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e795bddcce98449be7f81d173c0237
+      internalID: 1156246913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_64"
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 90
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c109a9fd05354d54e87eaef92433a355
+      internalID: -809414440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_65"
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 89
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b890294b53dff04eadcab08b58ff040
+      internalID: -1406767028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_66"
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 106
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872f1122abdf3e94ea659393374aaa75
+      internalID: -2056960009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_67"
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 115
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc72a70ab44c8b42b452e82d841a4ce
+      internalID: -1442937027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_68"
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 62
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c722ee85b08bf24f85b7447f5156810
+      internalID: 1100347120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_69"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e42ce7155620345a772ab580140e91
+      internalID: -746769149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_70"
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 34
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25c6fef21ee8184f86c341659259d54
+      internalID: -1684499952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_71"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 31
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112e042839e4cbb47b58e404800b8574
+      internalID: 594042693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_72"
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 7
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316d85716bbff7a4f90e1301247b7d8d
+      internalID: -1323326488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_73"
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 35
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca628c3edcfb5a04585e715c13a2a509
+      internalID: -882693527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_74"
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 43
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6595b3e31bf920944b0ce11c96fe39d6
+      internalID: 444753346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_75"
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 10
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82cd3e45c2908604db9079f9b82ec2fa
+      internalID: 1049792350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_76"
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 18
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2509399f2e46d944d8610f766c7080c4
+      internalID: -1480568537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_77"
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d393a76a267240858bec9466dd793
+      internalID: 1355776253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_78"
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 23
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916145a31b2eea94b80cd682f38c5660
+      internalID: 18698524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_79"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c86cf9dda523a84282aa8cb6907c62f
+      internalID: -819215887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_80"
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 0
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40aa3f8fb7b2114f8ef233934e01def
+      internalID: 1158948720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u20142d game ui icon button_8396054_81"
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 0
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93420124b7161d743a4ca641ff44e717
+      internalID: 945861790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "\u2014Pngtree\u20142d game ui icon button_8396054_0": -1120691338
+      "\u2014Pngtree\u20142d game ui icon button_8396054_1": 1677767926
+      "\u2014Pngtree\u20142d game ui icon button_8396054_10": -454055248
+      "\u2014Pngtree\u20142d game ui icon button_8396054_11": -1677588782
+      "\u2014Pngtree\u20142d game ui icon button_8396054_12": 1668404079
+      "\u2014Pngtree\u20142d game ui icon button_8396054_13": 1332143441
+      "\u2014Pngtree\u20142d game ui icon button_8396054_14": -1989050218
+      "\u2014Pngtree\u20142d game ui icon button_8396054_15": 462181733
+      "\u2014Pngtree\u20142d game ui icon button_8396054_16": 1212546232
+      "\u2014Pngtree\u20142d game ui icon button_8396054_17": -1733718680
+      "\u2014Pngtree\u20142d game ui icon button_8396054_18": -370542343
+      "\u2014Pngtree\u20142d game ui icon button_8396054_19": 431941815
+      "\u2014Pngtree\u20142d game ui icon button_8396054_2": -1686101343
+      "\u2014Pngtree\u20142d game ui icon button_8396054_20": -1445079974
+      "\u2014Pngtree\u20142d game ui icon button_8396054_21": 1636750912
+      "\u2014Pngtree\u20142d game ui icon button_8396054_22": 919087981
+      "\u2014Pngtree\u20142d game ui icon button_8396054_23": -1566242738
+      "\u2014Pngtree\u20142d game ui icon button_8396054_24": -1450050142
+      "\u2014Pngtree\u20142d game ui icon button_8396054_25": 1807431882
+      "\u2014Pngtree\u20142d game ui icon button_8396054_26": 812854994
+      "\u2014Pngtree\u20142d game ui icon button_8396054_27": 52197104
+      "\u2014Pngtree\u20142d game ui icon button_8396054_28": -1621522939
+      "\u2014Pngtree\u20142d game ui icon button_8396054_29": 1487060772
+      "\u2014Pngtree\u20142d game ui icon button_8396054_3": -268311486
+      "\u2014Pngtree\u20142d game ui icon button_8396054_30": -594224768
+      "\u2014Pngtree\u20142d game ui icon button_8396054_31": -251538257
+      "\u2014Pngtree\u20142d game ui icon button_8396054_32": -522833406
+      "\u2014Pngtree\u20142d game ui icon button_8396054_33": -344058073
+      "\u2014Pngtree\u20142d game ui icon button_8396054_34": -221310900
+      "\u2014Pngtree\u20142d game ui icon button_8396054_35": -1417186726
+      "\u2014Pngtree\u20142d game ui icon button_8396054_36": -1956787254
+      "\u2014Pngtree\u20142d game ui icon button_8396054_37": 1236713028
+      "\u2014Pngtree\u20142d game ui icon button_8396054_38": 572294547
+      "\u2014Pngtree\u20142d game ui icon button_8396054_39": -826261
+      "\u2014Pngtree\u20142d game ui icon button_8396054_4": 357336275
+      "\u2014Pngtree\u20142d game ui icon button_8396054_40": 1757455961
+      "\u2014Pngtree\u20142d game ui icon button_8396054_41": 1501070438
+      "\u2014Pngtree\u20142d game ui icon button_8396054_42": -348828765
+      "\u2014Pngtree\u20142d game ui icon button_8396054_43": 1117627863
+      "\u2014Pngtree\u20142d game ui icon button_8396054_44": 2131032847
+      "\u2014Pngtree\u20142d game ui icon button_8396054_45": -896886230
+      "\u2014Pngtree\u20142d game ui icon button_8396054_46": 1421812069
+      "\u2014Pngtree\u20142d game ui icon button_8396054_47": 368737002
+      "\u2014Pngtree\u20142d game ui icon button_8396054_48": 1843182771
+      "\u2014Pngtree\u20142d game ui icon button_8396054_49": 1296393619
+      "\u2014Pngtree\u20142d game ui icon button_8396054_5": -1671630294
+      "\u2014Pngtree\u20142d game ui icon button_8396054_50": 588712114
+      "\u2014Pngtree\u20142d game ui icon button_8396054_51": -1172163885
+      "\u2014Pngtree\u20142d game ui icon button_8396054_52": -1369007431
+      "\u2014Pngtree\u20142d game ui icon button_8396054_53": -1604902783
+      "\u2014Pngtree\u20142d game ui icon button_8396054_54": -1185412555
+      "\u2014Pngtree\u20142d game ui icon button_8396054_55": 935060235
+      "\u2014Pngtree\u20142d game ui icon button_8396054_56": 2081782555
+      "\u2014Pngtree\u20142d game ui icon button_8396054_57": 35186574
+      "\u2014Pngtree\u20142d game ui icon button_8396054_58": 148758079
+      "\u2014Pngtree\u20142d game ui icon button_8396054_59": -912096169
+      "\u2014Pngtree\u20142d game ui icon button_8396054_6": -415452018
+      "\u2014Pngtree\u20142d game ui icon button_8396054_60": 601054183
+      "\u2014Pngtree\u20142d game ui icon button_8396054_61": 1972557128
+      "\u2014Pngtree\u20142d game ui icon button_8396054_62": 2094014613
+      "\u2014Pngtree\u20142d game ui icon button_8396054_63": 1156246913
+      "\u2014Pngtree\u20142d game ui icon button_8396054_64": -809414440
+      "\u2014Pngtree\u20142d game ui icon button_8396054_65": -1406767028
+      "\u2014Pngtree\u20142d game ui icon button_8396054_66": -2056960009
+      "\u2014Pngtree\u20142d game ui icon button_8396054_67": -1442937027
+      "\u2014Pngtree\u20142d game ui icon button_8396054_68": 1100347120
+      "\u2014Pngtree\u20142d game ui icon button_8396054_69": -746769149
+      "\u2014Pngtree\u20142d game ui icon button_8396054_7": -1643086075
+      "\u2014Pngtree\u20142d game ui icon button_8396054_70": -1684499952
+      "\u2014Pngtree\u20142d game ui icon button_8396054_71": 594042693
+      "\u2014Pngtree\u20142d game ui icon button_8396054_72": -1323326488
+      "\u2014Pngtree\u20142d game ui icon button_8396054_73": -882693527
+      "\u2014Pngtree\u20142d game ui icon button_8396054_74": 444753346
+      "\u2014Pngtree\u20142d game ui icon button_8396054_75": 1049792350
+      "\u2014Pngtree\u20142d game ui icon button_8396054_76": -1480568537
+      "\u2014Pngtree\u20142d game ui icon button_8396054_77": 1355776253
+      "\u2014Pngtree\u20142d game ui icon button_8396054_78": 18698524
+      "\u2014Pngtree\u20142d game ui icon button_8396054_79": -819215887
+      "\u2014Pngtree\u20142d game ui icon button_8396054_8": 1775085340
+      "\u2014Pngtree\u20142d game ui icon button_8396054_80": 1158948720
+      "\u2014Pngtree\u20142d game ui icon button_8396054_81": 945861790
+      "\u2014Pngtree\u20142d game ui icon button_8396054_9": -704626139
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
