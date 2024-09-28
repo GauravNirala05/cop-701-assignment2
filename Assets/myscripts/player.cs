@@ -74,6 +74,11 @@ public class player : MonoBehaviour
     {
         print("its called");
         currentHealth += health;
+        if (health < 0)
+        {
+            ani.SetTrigger("hurt");
+
+        }
         if (currentHealth >= maxHealth)
         {
             healthBar.value = maxHealth;

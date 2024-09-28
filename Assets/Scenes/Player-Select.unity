@@ -626,7 +626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 633, y: 68}
+  m_AnchoredPosition: {x: 621, y: 68}
   m_SizeDelta: {x: 414.94, y: 357.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163217655
@@ -654,9 +654,7 @@ MonoBehaviour:
 
 
 
-    fire of rate :
-
-    5
+    fire rate - 5
 
 
     speed - 6'
@@ -3270,7 +3268,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 633, y: 68}
+  m_AnchoredPosition: {x: 621, y: 68}
   m_SizeDelta: {x: 414.94, y: 357.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313937319
@@ -3293,7 +3291,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "stats :\n\n\n\nfire of rate : \n2\n\nspeed - 8"
+  m_text: 'stats :
+
+
+
+
+    fire rate - 2
+
+
+    speed - 8'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

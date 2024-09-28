@@ -57,7 +57,10 @@ public class GameManager : MonoBehaviour
     }
     
     void OnSceneLoaded(Scene scene,LoadSceneMode mode){
-
+        if(scene.name=="Player-Select"){
+            Boss=0;
+            Kills=0;
+        }
         if(scene.name=="My_game"){
             Instantiate(Player[playSelect]);
             // GameObject player= Instantiate(Player[0]);
