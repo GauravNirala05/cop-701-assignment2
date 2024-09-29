@@ -80,14 +80,14 @@ public class enemy : MonoBehaviour
         targetAni.SetBool("hurt", false);
 
         attacker = transform.position;
-        if ((attacker.x + 2f) < target.position.x)
-        {
-            attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
-            sr.flipX = false;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
+        // if ((attacker.x + 2f) < target.position.x)
+        // {
+        //     attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
+        //     sr.flipX = false;
+        //     ani.SetBool("attack", false);
+        //     ani.SetBool("run", true);
 
-        }
+        // }
         else if ((attacker.x - 2f) > target.position.x)
         {
             attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
