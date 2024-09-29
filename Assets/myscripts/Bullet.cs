@@ -7,8 +7,8 @@ public class Bullet : MonoBehaviour
     public delegate void DoDamage(int damage);
     public static event DoDamage doDamage;
     private float speed = 10f;
-    private int damage = 10;
-    private float destroyTime = 1.5f;
+    private int damage = 9;
+    private float destroyTime = 1.6f;
     private CapsuleCollider2D collider2D;
     private Animator ani;
     // Start is called before the first frame update
