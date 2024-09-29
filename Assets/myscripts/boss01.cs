@@ -88,8 +88,8 @@ public class boss01 : MonoBehaviour
         {
             attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
             sr.flipX = true;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
+            // ani.SetBool("attack", false);
+            // ani.SetBool("run", true);
 
         }
         else
