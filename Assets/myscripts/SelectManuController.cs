@@ -49,8 +49,8 @@ public class SelectManuController : MonoBehaviour
             Vector3 newPosition = arrow.position;
             newPosition.x = 0;
             arrow.position = newPosition;
-            arrow.position.x = 4;
-            print(" 1 clicked");
+            // arrow.position.x = 4;
+            // print(" 1 clicked");
         }
         if (selectedIndex == 2)
         {
