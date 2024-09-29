@@ -53,12 +53,12 @@ public class spawner : MonoBehaviour
 
 
         }
-        if ((PlayerPosi.position.x + 20f <= t3.position.x + 1f && PlayerPosi.position.x + 20f >= t3.position.x - 1f) && t3spawned == false)
-        {
-            t3spawned = true;
-            StartCoroutine(SpawnEnemy3());
+        // if ((PlayerPosi.position.x + 20f <= t3.position.x + 1f && PlayerPosi.position.x + 20f >= t3.position.x - 1f) && t3spawned == false)
+        // {
+        //     t3spawned = true;
+        //     StartCoroutine(SpawnEnemy3());
 
-        }
+        // }
 
     }
     IEnumerator SpawnEnemy1()
