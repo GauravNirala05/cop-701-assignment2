@@ -36,14 +36,14 @@ public class boss01 : MonoBehaviour
         slider.value = TotalHealth;
     }
 
-    // void OnEnable()
-    // {
-    //     Bullet.doDamage += takeDamage;
-    // }
-    // void OnDisable()
-    // {
-    //     Bullet.doDamage -= takeDamage;
-    // }
+    void OnEnable()
+    {
+        Bullet.doDamage += takeDamage;
+    }
+    void OnDisable()
+    {
+        Bullet.doDamage -= takeDamage;
+    }
 
     public void takeDamage(int damage)
     {
