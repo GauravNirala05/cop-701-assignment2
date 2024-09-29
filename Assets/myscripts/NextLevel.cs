@@ -15,7 +15,7 @@ public class NextLevel : MonoBehaviour
     {
         SceneManager.LoadScene("My_game");
 
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void SelectPlayer()
     {
