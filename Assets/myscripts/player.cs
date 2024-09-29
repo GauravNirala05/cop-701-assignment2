@@ -274,9 +274,9 @@ public class player : MonoBehaviour
             audioManager.jumpSFX(audioManager.gun);
             nextFire = Time.time + fireRate;
             ani.SetTrigger("shot");
-            float x = transform.position.x;
-            float y = transform.position.y;
-            Transform bullet_posi = GameObject.Find("bullet-position").GetComponent<Transform>();
+            // float x = transform.position.x;
+            // float y = transform.position.y;
+            // Transform bullet_posi = GameObject.Find("bullet-position").GetComponent<Transform>();
             // GameObject temp = Instantiate(bullet);
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             if (spriteRenderer.flipX == true)

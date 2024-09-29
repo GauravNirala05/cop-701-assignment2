@@ -11,8 +11,8 @@ public class MainManuController : MonoBehaviour
     }
     public void  playGame(){
         string selected = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
-        // int selectedIndex = int.Parse(selected);
-        // Debug.Log("clicked : " + selected);
+        int selectedIndex = int.Parse(selected);
+        Debug.Log("clicked : " + selected);
        
 
         GameManager.manager.select=100;
