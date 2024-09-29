@@ -13,7 +13,7 @@ public class GameUIManager : MonoBehaviour
     {
         if (PauseManu)
         {
-            PauseManu.SetActive(false);
+            PauseManu.SetActive(true);
         }
     }
     void OnEnable()
