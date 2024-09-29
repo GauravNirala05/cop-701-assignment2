@@ -10,6 +10,7 @@ TagManager:
   - s2
   - s3
   - selector
+  - audio
   layers:
   - Default
   - TransparentFX

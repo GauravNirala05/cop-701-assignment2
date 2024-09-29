@@ -7,7 +7,7 @@ public class camera : MonoBehaviour
     private Transform player;
     private Vector3 tempPos;
     [SerializeField]
-    private float minx=-25f, maxx=140f;
+    private float minx=-22f, maxx=140f;
     // Start is called before the first frame update
     void Start()
     {

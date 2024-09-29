@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -218,7 +218,7 @@ MonoBehaviour:
   bullet: {fileID: 846797081368237969, guid: 407e0b0335045324eb8d1c594a2741c7, type: 3}
   shotSpawn: {fileID: 0}
   move: 6
-  jump: 7
+  jump: 11
   maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 0}

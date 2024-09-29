@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameUIManager : MonoBehaviour
 {
     public GameObject PauseManu;
+    AudioManager audioManager;
     private bool isPaused = false;
     private Button btn;
     void Start()
     {
+        audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         if (PauseManu)
         {
             PauseManu.SetActive(false);
@@ -41,6 +43,7 @@ public class GameUIManager : MonoBehaviour
 
     public void Home()
     {
+        audioManager.jumpSFX(audioManager.button);
         if (PauseManu)
         {
             ResumeGame();
@@ -49,6 +52,8 @@ public class GameUIManager : MonoBehaviour
     }
     public void Restart()
     {
+        audioManager.jumpSFX(audioManager.button);
+
         if (PauseManu)
         {
             ResumeGame();
@@ -57,6 +62,8 @@ public class GameUIManager : MonoBehaviour
     }
     public void SelectPlayer()
     {
+        audioManager.jumpSFX(audioManager.button);
+
          if (PauseManu)
         {
             ResumeGame();
@@ -65,6 +72,8 @@ public class GameUIManager : MonoBehaviour
     }
     public void Pause()
     {
+        audioManager.jumpSFX(audioManager.button);
+
         // SceneManager.LoadScene("Player-Select");
         if (isPaused)
         {

@@ -17,15 +17,16 @@ public class enemy : MonoBehaviour
     public int TotalHealth = 20;
     private int AttackDamege = 1;
     private float AttackTime;
-    private float AttackRate = 1f;
+    private float AttackRate = 2f;
     public Slider slider;
 
     public delegate void Demage(int demage, Vector2 position);
     public static event Demage DemageInfo;
 
-    void Awake()
+    AudioManager audioManager;
+    void Start()
     {
-
+        audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         target = GameObject.FindWithTag("Player").transform;
         targetAni = GameObject.FindWithTag("Player").GetComponent<Animator>();
         attackerBody = GetComponent<Rigidbody2D>();
@@ -51,12 +52,11 @@ public class enemy : MonoBehaviour
         float currenthealth = slider.value;
         currenthealth -= damage;
         slider.value = currenthealth;
+        audioManager.jumpSFX(audioManager.skeleton);
+
 
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+
     void Update()
     {
         checkHealth();
@@ -67,13 +67,22 @@ public class enemy : MonoBehaviour
         if (TotalHealth <= 0)
         {
             ani.SetBool("dead", true);
+            audioManager.jumpSFX(audioManager.skeleton);
+            audioManager.jumpSFX(audioManager.skeletondead);
             int temp = GameManager.manager.KillsInfo;
             temp++;
             GameManager.manager.KillsInfo = temp;
             Destroy(gameObject);
         }
     }
-
+    public void DoDamage()
+    {
+        if (DemageInfo != null)
+        {
+            Vector3 attacker = transform.position;
+            DemageInfo(AttackDamege, attacker);
+        }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -109,16 +118,10 @@ public class enemy : MonoBehaviour
                 if (Time.time > AttackTime)
                 {
                     AttackTime = Time.time + AttackRate;
+                    audioManager.jumpSFX(audioManager.skeletonAttack);
 
                     ani.SetBool("attack", true);
-
-                    if (DemageInfo != null)
-                    {
-                        DemageInfo(AttackDamege, attacker);
-                    }
                 }
-
-
             }
             // ani.SetBool("attack", true);
             // targetAni.SetBool("hurt", true);

@@ -6,7 +6,7 @@ public class spawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] spawn;
-
+    public static spawner spr;
     private GameObject newspawn;
     private Transform t1, t2, t3;
     private Transform PlayerPosi;
@@ -31,6 +31,15 @@ public class spawner : MonoBehaviour
     void Update()
     {
         spawnMoster();
+
+    }
+    public void spawnEnemyNow(int n, Vector3 position)
+    {
+        print("spawneerr ko call gya " + n + "" + position);
+        newspawn = Instantiate(spawn[0]);
+        newspawn.transform.position = position;
+        newspawn = Instantiate(spawn[1]);
+        newspawn.transform.position = position;
 
     }
     void spawnMoster()
@@ -64,7 +73,7 @@ public class spawner : MonoBehaviour
     IEnumerator SpawnEnemy1()
     {
         int t = 0; ;
-        while (t<2)
+        while (t < 2)
         {
             randnum = Random.Range(0, 2);
             yield return new WaitForSeconds(0.5f);
@@ -78,7 +87,12 @@ public class spawner : MonoBehaviour
         int t = 0; ;
         newspawn = Instantiate(spawn[0]);
         newspawn.transform.position = t1.position;
-        while (t<3)
+        if (GameManager.manager.BossBattle == 1)
+        {
+            newspawn = Instantiate(spawn[2]);
+            newspawn.transform.position = t2.position;
+        }
+        while (t < 3)
         {
             randnum = Random.Range(0, 2);
             yield return new WaitForSeconds(0.5f);
@@ -89,18 +103,23 @@ public class spawner : MonoBehaviour
     }
     IEnumerator SpawnEnemy3()
     {
+        newspawn = Instantiate(spawn[1]);
+        newspawn.transform.position = t3.position;
+
         newspawn = Instantiate(spawn[2]);
         newspawn.transform.position = t3.position;
         newspawn = Instantiate(spawn[0]);
         newspawn.transform.position = t3.position;
         newspawn = Instantiate(spawn[1]);
         newspawn.transform.position = t2.position;
+
         while (true)
         {
             randnum = Random.Range(0, 2);
             yield return new WaitForSeconds(8f);
             newspawn = Instantiate(spawn[randnum]);
             newspawn.transform.position = t3.position;
+
         }
     }
 

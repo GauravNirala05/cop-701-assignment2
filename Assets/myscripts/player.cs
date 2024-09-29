@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
+    AudioManager audioManager;
     public static player Player;
     private bool isAlive = true;
     public GameObject bullet;
@@ -45,6 +46,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         healthBar = GameObject.Find("HealthAndBar").GetComponent<Slider>();
         stageText = GameObject.Find("stage").GetComponent<TextMeshProUGUI>();
         KillCount = GameObject.Find("KillCount").GetComponent<TextMeshProUGUI>();
@@ -72,17 +74,24 @@ public class player : MonoBehaviour
     }
     public void addHealth(int health)
     {
-        print("its called");
+
+        // print("its called");
         currentHealth += health;
         if (health < 0)
         {
             ani.SetTrigger("hurt");
+            audioManager.jumpSFX(audioManager.hurt);
+
+        }
+        else
+        {
+            audioManager.jumpSFX(audioManager.heart);
 
         }
         if (currentHealth >= maxHealth)
         {
             healthBar.value = maxHealth;
-
+            currentHealth=maxHealth;
         }
         else
         {
@@ -94,12 +103,15 @@ public class player : MonoBehaviour
     {
         enemy.DemageInfo += HealthUpdate;
         boss01.DemageInfo += HealthUpdateByBoss;
+        boss2.DemageInfo += HealthUpdateByBoss2;
+
     }
     void OnDisable()
     {
 
         enemy.DemageInfo -= HealthUpdate;
         boss01.DemageInfo += HealthUpdateByBoss;
+        boss2.DemageInfo += HealthUpdateByBoss2;
 
     }
     void HealthUpdateByBoss(int demage, Vector2 AttackerPosition)
@@ -107,17 +119,36 @@ public class player : MonoBehaviour
         if (isAlive)
         {
 
-            print("called");
             CurrentPosition = transform.position;
             float distance = Vector2.Distance(CurrentPosition, AttackerPosition);
-
-            if (distance <= 2.2f)
+            if (distance < 3f)
             {
                 ani.SetTrigger("hurt");
+                audioManager.jumpSFX(audioManager.hurt);
+
                 currentHealth = currentHealth - demage;
                 healthBar.value = currentHealth;
             }
         }
+
+    }
+    void HealthUpdateByBoss2(int demage, Vector2 AttackerPosition)
+    {
+        if (isAlive)
+        {
+
+            CurrentPosition = transform.position;
+            float distance = Vector2.Distance(CurrentPosition, AttackerPosition);
+            if (distance < 3f)
+            {
+                ani.SetTrigger("hurt");
+                audioManager.jumpSFX(audioManager.hurt);
+
+                currentHealth = currentHealth - demage;
+                healthBar.value = currentHealth;
+            }
+        }
+
     }
 
     void HealthUpdate(int demage, Vector2 AttackerPosition)
@@ -130,6 +161,8 @@ public class player : MonoBehaviour
             if (distance < 1.7f)
             {
                 ani.SetTrigger("hurt");
+                audioManager.jumpSFX(audioManager.hurt);
+
                 currentHealth = currentHealth - demage;
                 healthBar.value = currentHealth;
             }
@@ -161,10 +194,25 @@ public class player : MonoBehaviour
         }
         if (GameManager.manager.BossBattle == 1)
         {
+            if (temp < 10)
+            {
+                stageText.text = "Level - 2";
+            }
+            else if (temp < 14)
+            {
+                stageText.text = "wave - 1";
+            }
+            else if (temp <= 20)
+            {
+                stageText.text = "wave - 2";
+            }
+            else if (temp > 20)
+            {
+                stageText.text = "Final wave";
+            }
 
-            stageText.text = "Level - 2";
         }
-        if (GameManager.manager.BossBattle == 2)
+        if (GameManager.manager.BossBattle == 3)
         {
 
             stageText.text = "Level - 3";
@@ -180,6 +228,7 @@ public class player : MonoBehaviour
             checkHealth();
             PlayerAnimation();
             updateUI();
+
         }
     }
     private void updateUI()
@@ -194,6 +243,7 @@ public class player : MonoBehaviour
         {
             isAlive = false;
             ani.SetTrigger("dead");
+            audioManager.jumpSFX(audioManager.gameover);
             SceneManager.LoadScene("Game-Over");
         }
     }
@@ -220,6 +270,8 @@ public class player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && Time.time > nextFire)
         {
+
+            audioManager.jumpSFX(audioManager.gun);
             nextFire = Time.time + fireRate;
             ani.SetTrigger("shot");
             float x = transform.position.x;
@@ -251,6 +303,7 @@ public class player : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isgrounded)
         {
+            audioManager.jumpSFX(audioManager.jump);
             isgrounded = false;
             ani.SetBool("jump", true);
             body.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);

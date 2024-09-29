@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     [SerializeField]
     private GameObject[] Player;
@@ -57,11 +56,11 @@ public class GameManager : MonoBehaviour
     }
     
     void OnSceneLoaded(Scene scene,LoadSceneMode mode){
-        if(scene.name=="Player-Select"){
+        
+        if(scene.name=="My_game"){
+            // GameObject.Find("mainTheme").GetComponent<AudioSource>().Play();
             Boss=0;
             Kills=0;
-        }
-        if(scene.name=="My_game"){
             Instantiate(Player[playSelect]);
             // GameObject player= Instantiate(Player[0]);
             // Transform posi= GameObject.FindWithTag("Player").transform;

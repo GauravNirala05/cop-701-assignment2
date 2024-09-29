@@ -9,13 +9,16 @@ public class SelectManuController : MonoBehaviour
     public GameObject stats2;
     private Transform arrow;
     private bool checker = true;
+    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         stats2.SetActive(false);
     }
     public void Selecting()
     {
+        audioManager.jumpSFX(audioManager.button);
         arrow = GameObject.FindWithTag("selector").transform;
         string selected = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name;
 

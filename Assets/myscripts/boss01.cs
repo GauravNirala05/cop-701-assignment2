@@ -15,7 +15,7 @@ public class boss01 : MonoBehaviour
     private Rigidbody2D body;
     private Animator ani;
     public int TotalHealth = 20;
-    private int AttackDamege = 5;
+    private int AttackDamege = 3;
     private float AttackTime;
     private float AttackRate = 1f;
     public Slider slider;
@@ -23,8 +23,10 @@ public class boss01 : MonoBehaviour
     public delegate void DemageBoss(int demage, Vector2 position);
     public static event DemageBoss DemageInfo;
 
+    AudioManager audioManager;
     void Awake()
     {
+        audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
 
         target = GameObject.FindWithTag("Player").transform;
         targetAni = GameObject.FindWithTag("Player").GetComponent<Animator>();
@@ -34,6 +36,7 @@ public class boss01 : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         slider.maxValue = TotalHealth;
         slider.value = TotalHealth;
+        audioManager.jumpSFX(audioManager.boss1);
     }
 
     // void OnEnable()
@@ -44,7 +47,14 @@ public class boss01 : MonoBehaviour
     // {
     //     Bullet.doDamage -= takeDamage;
     // }
-
+    public void DoDamage()
+    {
+        if (DemageInfo != null)
+        {
+            Vector3 attacker = transform.position;
+            DemageInfo(AttackDamege, attacker);
+        }
+    }
     public void takeDamage(int damage)
     {
         TotalHealth = TotalHealth - damage;
@@ -52,11 +62,9 @@ public class boss01 : MonoBehaviour
         currenthealth -= damage;
         slider.value = currenthealth;
         ani.SetTrigger("hurt");
+        audioManager.jumpSFX(audioManager.skeleton);
 
-    }
-    void Update()
-    {
-        checkHealth();
+
     }
 
     private void checkHealth()
@@ -64,16 +72,30 @@ public class boss01 : MonoBehaviour
         if (TotalHealth <= 0)
         {
             ani.SetTrigger("dead");
+            audioManager.jumpSFX(audioManager.boss1);
+            audioManager.jumpSFX(audioManager.skeletondead);
             int temp = GameManager.manager.BossBattle;
             temp++;
             // temp++;
             GameManager.manager.BossBattle = temp;
-            SceneManager.LoadScene("Next-level");
+
+            if (GameManager.manager.BossBattle == 1)
+            {
+                SceneManager.LoadScene("Next-level");
+
+            }
+            if (GameManager.manager.BossBattle == 3)
+            {
+                SceneManager.LoadScene("Next-level");
+
+            }
+            Destroy(gameObject);
         }
     }
     // Update is called once per frame
     void FixedUpdate()
     {
+        checkHealth();
 
         attacker = transform.position;
         if ((attacker.x + 3f) < target.position.x)
@@ -107,13 +129,9 @@ public class boss01 : MonoBehaviour
                     AttackTime = Time.time + AttackRate;
 
                     ani.SetBool("attack", true);
+                    audioManager.jumpSFX(audioManager.bossAttack);
 
                     print("boss demage");
-                    if (DemageInfo != null)
-                    {
-                        print("boss demage sent");
-                        DemageInfo(AttackDamege, attacker);
-                    }
                 }
 
             }
