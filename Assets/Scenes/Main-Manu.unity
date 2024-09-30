@@ -1186,7 +1186,8 @@ MonoBehaviour:
   m_text: "                      controls\n         jump            -           spacebar
     \n         move forward    -           right arrow\n         move backward  
     -           left arrow\n         fire            -           f key\n        
-    crauch          -           down arrow"
+    crauch          -           down arrow\n     Tip : you can grab the wooden planks
+    and double jump"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1322,8 +1323,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2226,7 +2227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1442367397, guid: 892f1ce54869f1e4991997d26037c4ef, type: 3}
+  m_Sprite: {fileID: -369906722, guid: 7cbfd966904dc34409c669af9a9421ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3175,10 +3176,10 @@ RectTransform:
   - {fileID: 797188066}
   m_Father: {fileID: 891825418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 4.5, y: -148.46002}
-  m_SizeDelta: {x: -1029, y: -935.14}
+  m_SizeDelta: {x: 891, y: 144.85999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1624693667
 MonoBehaviour:
@@ -4111,13 +4112,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: b2a9349720915e54591d99884283ae7a, type: 3}
     - target: {fileID: 1026537979055959438, guid: e43230227eaa5934fbe18884a392667a, type: 3}
+      propertyPath: bossLaser
+      value: 
+      objectReference: {fileID: 8300000, guid: 135c0945509695d47833f4d5604b772b, type: 3}
+    - target: {fileID: 1026537979055959438, guid: e43230227eaa5934fbe18884a392667a, type: 3}
       propertyPath: bossAttack
       value: 
       objectReference: {fileID: 8300000, guid: cb44f67660ccb2b48adddc7bc893c1bb, type: 3}
     - target: {fileID: 1026537979055959438, guid: e43230227eaa5934fbe18884a392667a, type: 3}
+      propertyPath: GameComplete
+      value: 
+      objectReference: {fileID: 8300000, guid: f54a51029634fcc4fb9422a59bccf4ca, type: 3}
+    - target: {fileID: 1026537979055959438, guid: e43230227eaa5934fbe18884a392667a, type: 3}
+      propertyPath: CompleteLevel
+      value: 
+      objectReference: {fileID: 8300000, guid: 173c240bba82a034db844a3644b79f5b, type: 3}
+    - target: {fileID: 1026537979055959438, guid: e43230227eaa5934fbe18884a392667a, type: 3}
       propertyPath: skeletonAttack
       value: 
       objectReference: {fileID: 8300000, guid: cd181540a566ae54fb6fb19dd0a15142, type: 3}
+    - target: {fileID: 3146770859280131152, guid: e43230227eaa5934fbe18884a392667a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966050405223642432, guid: e43230227eaa5934fbe18884a392667a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4171,6 +4192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4908250560486716685, guid: 4a954ce2301c0d94c95ce13c54dba89c, type: 3}
+      propertyPath: Player.Array.data[0]
+      value: 
+      objectReference: {fileID: 7937258198024437868, guid: fa04b3d081a07844a8836edbafee9b56, type: 3}
     - target: {fileID: 7772598882779391322, guid: 4a954ce2301c0d94c95ce13c54dba89c, type: 3}
       propertyPath: m_Name
       value: GameManager

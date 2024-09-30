@@ -62,7 +62,6 @@ public class SelectManuController : MonoBehaviour
                 GameManager.manager.select = 0;
                 GameManager.manager.fireRateinfo = 0.5f;
                 GameManager.manager.speedinfo = 8f;
-
             }
             SceneManager.LoadScene("My_game");
         }

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
+    public GameObject foot;
     AudioManager audioManager;
     public static player Player;
     private bool isAlive = true;
@@ -46,6 +47,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        foot.SetActive(false);
         audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         healthBar = GameObject.Find("HealthAndBar").GetComponent<Slider>();
         stageText = GameObject.Find("stage").GetComponent<TextMeshProUGUI>();
@@ -91,7 +93,7 @@ public class player : MonoBehaviour
         if (currentHealth >= maxHealth)
         {
             healthBar.value = maxHealth;
-            currentHealth=maxHealth;
+            currentHealth = maxHealth;
         }
         else
         {
@@ -110,8 +112,8 @@ public class player : MonoBehaviour
     {
 
         enemy.DemageInfo -= HealthUpdate;
-        boss01.DemageInfo += HealthUpdateByBoss;
-        boss2.DemageInfo += HealthUpdateByBoss2;
+        boss01.DemageInfo -= HealthUpdateByBoss;
+        boss2.DemageInfo -= HealthUpdateByBoss2;
 
     }
     void HealthUpdateByBoss(int demage, Vector2 AttackerPosition)
@@ -158,7 +160,7 @@ public class player : MonoBehaviour
 
             CurrentPosition = transform.position;
             float distance = Vector2.Distance(CurrentPosition, AttackerPosition);
-            if (distance < 1.7f)
+            if (distance < 2.1f)
             {
                 ani.SetTrigger("hurt");
                 audioManager.jumpSFX(audioManager.hurt);
@@ -194,22 +196,24 @@ public class player : MonoBehaviour
         }
         if (GameManager.manager.BossBattle == 1)
         {
-            if (temp < 10)
-            {
-                stageText.text = "Level - 2";
-            }
-            else if (temp < 14)
-            {
-                stageText.text = "wave - 1";
-            }
-            else if (temp <= 20)
-            {
-                stageText.text = "wave - 2";
-            }
-            else if (temp > 20)
-            {
-                stageText.text = "Final wave";
-            }
+            stageText.text = "Level - 2";
+
+            // if (temp < 17)
+            // {
+            //     stageText.text = "Level - 2";
+            // }
+            // else if (temp < 20)
+            // {
+            //     stageText.text = "wave - 1";
+            // }
+            // else if (temp <= 25)
+            // {
+            //     stageText.text = "wave - 2";
+            // }
+            // else if (temp > 30)
+            // {
+            //     stageText.text = "Final wave";
+            // }
 
         }
         if (GameManager.manager.BossBattle == 3)
@@ -228,6 +232,7 @@ public class player : MonoBehaviour
             checkHealth();
             PlayerAnimation();
             updateUI();
+            FootSteps();
 
         }
     }
@@ -239,13 +244,15 @@ public class player : MonoBehaviour
     }
     private void checkHealth()
     {
-        if (healthBar.value <= 0)
+        if (healthBar.value <= 0 && isAlive)
         {
             isAlive = false;
             ani.SetTrigger("dead");
-            audioManager.jumpSFX(audioManager.gameover);
-            SceneManager.LoadScene("Game-Over");
         }
+    }
+    public void playerDead()
+    {
+        SceneManager.LoadScene("Game-Over");
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -274,9 +281,9 @@ public class player : MonoBehaviour
             audioManager.jumpSFX(audioManager.gun);
             nextFire = Time.time + fireRate;
             ani.SetTrigger("shot");
-            // float x = transform.position.x;
-            // float y = transform.position.y;
-            // Transform bullet_posi = GameObject.Find("bullet-position").GetComponent<Transform>();
+            float x = transform.position.x;
+            float y = transform.position.y;
+            Transform bullet_posi = GameObject.Find("bullet-position").GetComponent<Transform>();
             // GameObject temp = Instantiate(bullet);
             SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
             if (spriteRenderer.flipX == true)
@@ -326,11 +333,51 @@ public class player : MonoBehaviour
         {
             sr.flipX = true;
             ani.SetBool("Runing", true);
+
         }
         else
         {
             ani.SetBool("Runing", false);
         }
 
+    }
+    private void FootSteps()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            foot.SetActive(true);
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            foot.SetActive(false);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            foot.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            foot.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            foot.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            foot.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            foot.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            foot.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            foot.SetActive(false);
+        }
     }
 }

@@ -23,7 +23,6 @@ public class spawner : MonoBehaviour
     }
     void Start()
     {
-
         PlayerPosi = GameObject.FindWithTag("Player").transform;
     }
 
@@ -35,7 +34,7 @@ public class spawner : MonoBehaviour
     }
     public void spawnEnemyNow(int n, Vector3 position)
     {
-        print("spawneerr ko call gya " + n + "" + position);
+        // print("spawneerr ko call gya " + n + "" + position);
         newspawn = Instantiate(spawn[0]);
         newspawn.transform.position = position;
         newspawn = Instantiate(spawn[1]);
@@ -88,6 +87,11 @@ public class spawner : MonoBehaviour
         newspawn = Instantiate(spawn[0]);
         newspawn.transform.position = t1.position;
         if (GameManager.manager.BossBattle == 1)
+        {
+            newspawn = Instantiate(spawn[2]);
+            newspawn.transform.position = t2.position;
+        }
+        if (GameManager.manager.BossBattle == 3)
         {
             newspawn = Instantiate(spawn[2]);
             newspawn.transform.position = t2.position;

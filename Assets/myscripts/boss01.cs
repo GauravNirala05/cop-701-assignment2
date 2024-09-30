@@ -19,13 +19,14 @@ public class boss01 : MonoBehaviour
     private float AttackTime;
     private float AttackRate = 1f;
     public Slider slider;
-
+    private bool IsAlive = true;
     public delegate void DemageBoss(int demage, Vector2 position);
     public static event DemageBoss DemageInfo;
 
     AudioManager audioManager;
     void Awake()
     {
+
         audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
 
         target = GameObject.FindWithTag("Player").transform;
@@ -47,6 +48,22 @@ public class boss01 : MonoBehaviour
     // {
     //     Bullet.doDamage -= takeDamage;
     // }
+    public void bossDead()
+    {
+        speed = 0;
+        print("boss1 defeat");
+
+        if (GameManager.manager.BossBattle == 1)
+        {
+            SceneManager.LoadScene("Next-level");
+
+        }
+        if (GameManager.manager.BossBattle == 3)
+        {
+            SceneManager.LoadScene("Next-level");
+        }
+        Destroy(gameObject);
+    }
     public void DoDamage()
     {
         if (DemageInfo != null)
@@ -61,79 +78,69 @@ public class boss01 : MonoBehaviour
         float currenthealth = slider.value;
         currenthealth -= damage;
         slider.value = currenthealth;
-        ani.SetTrigger("hurt");
+        // ani.SetTrigger("hurt");
         audioManager.jumpSFX(audioManager.skeleton);
-
 
     }
 
     private void checkHealth()
     {
-        if (TotalHealth <= 0)
+        if (TotalHealth <= 0 && IsAlive)
         {
+            IsAlive = false;
             ani.SetTrigger("dead");
-            audioManager.jumpSFX(audioManager.boss1);
+            // audioManager.jumpSFX(audioManager.boss1);
             audioManager.jumpSFX(audioManager.skeletondead);
             int temp = GameManager.manager.BossBattle;
             temp++;
             // temp++;
             GameManager.manager.BossBattle = temp;
 
-            if (GameManager.manager.BossBattle == 1)
-            {
-                SceneManager.LoadScene("Next-level");
-
-            }
-            if (GameManager.manager.BossBattle == 3)
-            {
-                SceneManager.LoadScene("Next-level");
-
-            }
-            Destroy(gameObject);
         }
     }
     // Update is called once per frame
     void FixedUpdate()
     {
-        checkHealth();
-
-        attacker = transform.position;
-        if ((attacker.x + 3f) < target.position.x)
+        if (IsAlive)
         {
-            attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
-            sr.flipX = false;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
+            checkHealth();
 
-        }
-        else if ((attacker.x - 3f) > target.position.x)
-        {
-            attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
-            sr.flipX = true;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
-
-        }
-        else
-        {
-            ani.SetBool("run", false);
-            if (target.position.y > -3f)
+            attacker = transform.position;
+            if ((attacker.x + 3f) < target.position.x)
             {
+                attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
+                sr.flipX = false;
                 ani.SetBool("attack", false);
+                ani.SetBool("run", true);
+
+            }
+            else if ((attacker.x - 3f) > target.position.x)
+            {
+                attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
+                sr.flipX = true;
+                ani.SetBool("attack", false);
+                ani.SetBool("run", true);
 
             }
             else
             {
-                if (Time.time > AttackTime)
+                ani.SetBool("run", false);
+                if (target.position.y > -3f)
                 {
-                    AttackTime = Time.time + AttackRate;
+                    ani.SetBool("attack", false);
 
-                    ani.SetBool("attack", true);
-                    audioManager.jumpSFX(audioManager.bossAttack);
-
-                    print("boss demage");
                 }
+                else
+                {
+                    if (Time.time > AttackTime)
+                    {
+                        AttackTime = Time.time + AttackRate;
 
+                        ani.SetBool("attack", true);
+                        audioManager.jumpSFX(audioManager.bossAttack);
+                    }
+
+                }
             }
         }
 

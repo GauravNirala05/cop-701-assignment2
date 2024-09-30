@@ -19,7 +19,7 @@ public class enemy : MonoBehaviour
     private float AttackTime;
     private float AttackRate = 2f;
     public Slider slider;
-
+    private bool IsAlive = true;
     public delegate void Demage(int demage, Vector2 position);
     public static event Demage DemageInfo;
 
@@ -61,18 +61,24 @@ public class enemy : MonoBehaviour
     {
         checkHealth();
     }
+    public void enemyDead()
+    {
 
+        print("enemy dead 1");
+        Destroy(gameObject);
+        audioManager.jumpSFX(audioManager.skeleton);
+        audioManager.jumpSFX(audioManager.skeletondead);
+        int temp = GameManager.manager.KillsInfo;
+        temp++;
+        GameManager.manager.KillsInfo = temp;
+    }
     private void checkHealth()
     {
-        if (TotalHealth <= 0)
+        if (TotalHealth <= 0 && IsAlive)
         {
+            IsAlive = false;
             ani.SetBool("dead", true);
-            audioManager.jumpSFX(audioManager.skeleton);
-            audioManager.jumpSFX(audioManager.skeletondead);
-            int temp = GameManager.manager.KillsInfo;
-            temp++;
-            GameManager.manager.KillsInfo = temp;
-            Destroy(gameObject);
+
         }
     }
     public void DoDamage()
@@ -86,46 +92,49 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        targetAni.SetBool("hurt", false);
-
-        attacker = transform.position;
-        if ((attacker.x + 2f) < target.position.x)
+        if (IsAlive)
         {
-            attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
-            sr.flipX = false;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
+            targetAni.SetBool("hurt", false);
 
-        }
-        else if ((attacker.x - 2f) > target.position.x)
-        {
-            attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
-            sr.flipX = true;
-            ani.SetBool("attack", false);
-            ani.SetBool("run", true);
-
-        }
-        else
-        {
-            ani.SetBool("run", false);
-            if (target.position.y > -1.7f)
+            attacker = transform.position;
+            if ((attacker.x + 2f) < target.position.x)
             {
+                attackerBody.velocity = new Vector2(speed, attackerBody.velocity.y);
+                sr.flipX = false;
                 ani.SetBool("attack", false);
+                ani.SetBool("run", true);
+
+            }
+            else if ((attacker.x - 2f) > target.position.x)
+            {
+                attackerBody.velocity = new Vector2(-speed, attackerBody.velocity.y);
+                sr.flipX = true;
+                ani.SetBool("attack", false);
+                ani.SetBool("run", true);
 
             }
             else
             {
-                if (Time.time > AttackTime)
+                ani.SetBool("run", false);
+                if (target.position.y > -1.7f)
                 {
-                    AttackTime = Time.time + AttackRate;
-                    audioManager.jumpSFX(audioManager.skeletonAttack);
+                    ani.SetBool("attack", false);
 
-                    ani.SetBool("attack", true);
                 }
+                else
+                {
+                    if (Time.time > AttackTime)
+                    {
+                        AttackTime = Time.time + AttackRate;
+                        audioManager.jumpSFX(audioManager.skeletonAttack);
+
+                        ani.SetBool("attack", true);
+                    }
+                }
+                // ani.SetBool("attack", true);
+                // targetAni.SetBool("hurt", true);
+                // StopAnimationAfterDelay(0.5f);
             }
-            // ani.SetBool("attack", true);
-            // targetAni.SetBool("hurt", true);
-            // StopAnimationAfterDelay(0.5f);
         }
 
     }

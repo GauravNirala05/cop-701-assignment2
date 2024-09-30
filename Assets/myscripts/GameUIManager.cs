@@ -15,7 +15,7 @@ public class GameUIManager : MonoBehaviour
         audioManager = GameObject.FindWithTag("audio").GetComponent<AudioManager>();
         if (PauseManu)
         {
-            PauseManu.SetActive(true);
+            PauseManu.SetActive(false);
         }
     }
     void OnEnable()
