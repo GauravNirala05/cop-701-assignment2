@@ -2728,6 +2728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseManu: {fileID: 909993007}
+  BossHealth: {fileID: 0}
 --- !u!1001 &766729549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5070,6 +5071,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1319482958}
   - {fileID: 366882531}
   - {fileID: 1597879650}
   - {fileID: 1578358220}
@@ -5077,7 +5079,6 @@ RectTransform:
   - {fileID: 1895929775}
   - {fileID: 1749122572}
   - {fileID: 519453521}
-  - {fileID: 1319482958}
   - {fileID: 1611531948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

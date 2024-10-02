@@ -273,35 +273,18 @@ public class player : MonoBehaviour
         transform.position += new Vector3(x, 0f, 0f) * Time.deltaTime * move;
 
     }
+    public void bulletShoot()
+    {
+        audioManager.jumpSFX(audioManager.gun);
+        GameObject temp = Instantiate(bullet, shotSpawn.position, transform.rotation);
+    }
     void PlayerAnimation()
     {
         if (Input.GetKeyDown(KeyCode.F) && Time.time > nextFire)
         {
-
-            audioManager.jumpSFX(audioManager.gun);
             nextFire = Time.time + fireRate;
             ani.SetTrigger("shot");
-            float x = transform.position.x;
-            float y = transform.position.y;
-            Transform bullet_posi = GameObject.Find("bullet-position").GetComponent<Transform>();
-            // GameObject temp = Instantiate(bullet);
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            if (spriteRenderer.flipX == true)
-            {
-                Vector3 rotationEuler = new Vector3(0, 0, 180); // Rotate 1800 degrees around the Y axis
-                Quaternion rotationQuaternion = Quaternion.Euler(rotationEuler);
-                // Vector3 newPosition = bullet_posi.position;
-                // newPosition.z = - newPosition.z;
-                // bullet_posi.position = newPosition;
-                GameObject temp = Instantiate(bullet, bullet_posi.position, rotationQuaternion);
-            }
-            else
-            {
-                GameObject temp = Instantiate(bullet, bullet_posi.position, transform.rotation);
-            }
-            // temp.transform.position = x+ 0.7f  ;
-            // temp.transform.position = y + 0.12f  ;
-            // print("bullet fired");
+
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -310,6 +293,8 @@ public class player : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isgrounded)
         {
+            ani.SetBool("crauch", false);
+
             audioManager.jumpSFX(audioManager.jump);
             isgrounded = false;
             ani.SetBool("jump", true);
@@ -326,12 +311,16 @@ public class player : MonoBehaviour
         }
         if (x > 0f)
         {
-            sr.flipX = false;
+            // sr.flipX = false;
+            // transform.Rotate(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
             ani.SetBool("Runing", true);
         }
         else if (x < 0f)
         {
-            sr.flipX = true;
+            // sr.flipX = true;
+            // transform.Rotate(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
             ani.SetBool("Runing", true);
 
         }

@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the servivor
+  m_text: the survivor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5386dae492c863c48973b6317b4df070, type: 2}
   m_sharedMaterial: {fileID: -1425872873479711765, guid: 5386dae492c863c48973b6317b4df070, type: 2}

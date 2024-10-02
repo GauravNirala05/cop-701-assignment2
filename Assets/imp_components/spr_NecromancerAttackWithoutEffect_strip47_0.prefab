@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1379105955058501767}
   m_Layer: 6
   m_Name: spr_NecromancerAttackWithoutEffect_strip47_0
-  m_TagString: enemy
+  m_TagString: MainBoss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,6 +118,7 @@ Transform:
   m_LocalScale: {x: 7, y: 7, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4935451808629806771}
   - {fileID: 5167188304608633075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -268,10 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af5c8fdbf643ee4fb41575a4fcd1753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossLaser: {fileID: 0}
+  bossLaser: {fileID: 49062275246939853, guid: f4a39719fe6204249be889ce5a196eb2, type: 3}
   bossLaserDamage: 1
+  laserPosition: {fileID: 4935451808629806771}
   speed: 3
-  TotalHealth: 150
+  TotalHealth: 200
   currentHealth: 0
   slider: {fileID: 7642510023768325945}
 --- !u!1 &1132826254020223279
@@ -424,6 +426,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4074168450416678862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4935451808629806771}
+  m_Layer: 6
+  m_Name: laserPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4935451808629806771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4074168450416678862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3015124386266115077}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4152808766542257187
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameUIManager : MonoBehaviour
 {
     public GameObject PauseManu;
+    public GameObject BossHealth;
     AudioManager audioManager;
     private bool isPaused = false;
     private Button btn;
@@ -16,6 +17,26 @@ public class GameUIManager : MonoBehaviour
         if (PauseManu)
         {
             PauseManu.SetActive(false);
+        }
+        if (BossHealth)
+        {
+            BossHealth.SetActive(false);
+        }
+    }
+    void FixedUpdate()
+    {
+        if (BossHealth)
+        {
+            Transform playerPosi = GameObject.FindWithTag("Player").GetComponent<Transform>();
+            Transform BossPosi = GameObject.FindWithTag("MainBoss").GetComponent<Transform>();
+            float distance = Vector3.Distance(playerPosi.position, BossPosi.position);
+            if (distance < 15)
+            {
+                BossHealth.SetActive(true);
+            }
+            else{
+                BossHealth.SetActive(false);
+            }
         }
     }
     void OnEnable()
@@ -64,7 +85,7 @@ public class GameUIManager : MonoBehaviour
     {
         audioManager.jumpSFX(audioManager.button);
 
-         if (PauseManu)
+        if (PauseManu)
         {
             ResumeGame();
         }

@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 163217654}
   - component: {fileID: 163217656}
   - component: {fileID: 163217655}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +1686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604464993}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: stat2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3038,8 +3038,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 0308af16988408d4a9e0c1d0f56f0e52, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3555,7 +3555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433325925}
   - component: {fileID: 1433325926}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: "\u2014Pngtree\u2014ui ux button_6391760_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3641,7 +3641,7 @@ GameObject:
   - component: {fileID: 1439719527}
   - component: {fileID: 1439719526}
   - component: {fileID: 1439719525}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

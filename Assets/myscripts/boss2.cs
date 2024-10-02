@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class boss2 : MonoBehaviour
 {
     public GameObject bossLaser;
+
     public float bossLaserDamage = 1;
+    public Transform laserPosition;
     private Transform target;
     private Animator targetAni;
     private Vector2 attacker;
@@ -21,9 +23,10 @@ public class boss2 : MonoBehaviour
     private bool IsChecked = true;
     private int AttackDamege = 2;
     private float AttackTime, AttackTime2;
-    private float AttackRate = 0.5f;
+    private float AttackRate = 4f;
     private float AttackRate2 = 3f;
     public Slider slider;
+    public Slider bossSlider;
 
     public delegate void DemageBoss2(int demage, Vector2 position);
     public static event DemageBoss2 DemageInfo;
@@ -37,6 +40,8 @@ public class boss2 : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         ani = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        bossSlider.maxValue= TotalHealth;
+        bossSlider.value= TotalHealth;
         slider.maxValue = TotalHealth;
         slider.value = TotalHealth;
         currentHealth = TotalHealth;
@@ -56,8 +61,10 @@ public class boss2 : MonoBehaviour
     public void takeDamage(int damage)
     {
         currentHealth = currentHealth - damage;
+        bossSlider.value= currentHealth;
+
         slider.value = currentHealth;
-        if (currentHealth * 2 < TotalHealth)
+        if (currentHealth *2 > TotalHealth)
         {
             ani.SetTrigger("hurt");
 
@@ -106,6 +113,11 @@ public class boss2 : MonoBehaviour
     //     SceneManager.LoadScene("Next-level");
     // }
     // Update is called once per frame
+    public void instantiateLaser()
+    {
+        audioManager.Play2X(audioManager.bossLaser);
+        Instantiate(bossLaser,laserPosition.position,transform.rotation);
+    }
     void FixedUpdate()
     {
         if (IsChecked)
@@ -117,30 +129,28 @@ public class boss2 : MonoBehaviour
             float time = Time.time;
             if (attacker.x < target.position.x)
             {
-                sr.flipX = false;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
             }
             else
             {
-                sr.flipX = true;
-            }
+                transform.rotation = Quaternion.Euler(0, 180, 0);
 
-            if (distance < 4f)
+            }
+            if (distance < 10f)
             {
                 attackerBody.velocity = new Vector2(0, attackerBody.velocity.y);
 
                 ani.SetBool("run", false);
-                // print("setbool run false");
                 if (time > AttackTime)
                 {
                     AttackTime = Time.time + AttackRate;
 
                     ani.SetTrigger("atk2");
-                    audioManager.Play2X(audioManager.bossLaser);
 
                 }
 
             }
-            else if (distance < 9f && distance >= 4f)
+            else if (distance < 14f && distance >= 10f)
             {
 
                 ani.SetBool("run", false);
@@ -156,12 +166,11 @@ public class boss2 : MonoBehaviour
                     ani.SetTrigger("atk1");
                     audioManager.jumpSFX(audioManager.skeleton);
 
-
                     // print(posi);
                     // print("spawner called");
                 }
             }
-            else if (distance < 10f && distance >= 9f)
+            else if (distance < 16f && distance >= 14f)
             {
 
                 ani.SetBool("run", true);

@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foot: {fileID: 217816743664626139}
   bullet: {fileID: 846797081368237969, guid: 407e0b0335045324eb8d1c594a2741c7, type: 3}
-  shotSpawn: {fileID: 0}
+  shotSpawn: {fileID: 514788233156476644}
   move: 8
   jump: 11
   maxHealth: 20

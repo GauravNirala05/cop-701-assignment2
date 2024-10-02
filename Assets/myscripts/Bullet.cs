@@ -27,10 +27,14 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
-
+    public void destroyNow()
+    {
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // print(collision);
+        // speed=0;
         enemy Enemy = collision.gameObject.GetComponent<enemy>();
         boss01 boss1 = collision.gameObject.GetComponent<boss01>();
         boss2 Boss2 = collision.gameObject.GetComponent<boss2>();
@@ -47,7 +51,7 @@ public class Bullet : MonoBehaviour
         {
             Boss2.takeDamage(damage);
         }
+        // ani.SetTrigger("destroy");
         Destroy(gameObject);
-
     }
 }
